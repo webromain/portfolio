@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Project Alpha",
+      "description": "A web application for managing tasks and deadlines.",
+      "image": "https://via.placeholder.com/300x200?text=Project+Alpha",
+      "technologies": ["React", "Node.js", "MongoDB"],
+      "href": "/projects/alpha",
+      "date": "2025-12-01"
+    },
+    {
+      "id": 2,
+      "name": "Project Beta",
+      "description": "A mobile app for tracking fitness activities and health metrics.",
+      "image": "https://via.placeholder.com/300x200?text=Project+Beta",
+      "technologies": ["React Native", "Firebase"],
+      "href": "/projects/beta",
+      "date": "2025-11-15"
+    },
+    {
+      "id": 3,
+      "name": "E-Commerce Platform",
+      "description": "Full-stack e-commerce solution with payment integration.",
+      "image": "https://via.placeholder.com/300x200?text=E-Commerce",
+      "technologies": ["React", "Express", "PostgreSQL", "Stripe"],
+      "href": "/projects/ecommerce",
+      "date": "2025-10-20"
+    }
+  ]
+}
