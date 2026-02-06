@@ -20,7 +20,7 @@ function ProjectDetail() {
   useEffect(() => {
     // Chercher le projet par slug
     const foundProject = projectsData.projects.find(
-      (p) => createSlug(p.name) === projectSlug
+      (p) => createSlug(p.name) === projectSlug,
     );
     if (foundProject) {
       setProject(foundProject);
@@ -38,14 +38,6 @@ function ProjectDetail() {
       <button className="back-button" onClick={() => navigate("/")}>
         ← Retour aux projets
       </button>
-
-      <div className="project-detail-header">
-        <img
-          src={project.image}
-          alt={project.name}
-          className="project-hero-image"
-        />
-      </div>
 
       <div className="project-detail-content">
         <h1 className="project-detail-title">{project.name}</h1>
@@ -79,6 +71,13 @@ function ProjectDetail() {
             Visiter le projet →
           </a>
         </div>
+      </div>
+      <div className="project-detail-header">
+        <img
+          src={project.image}
+          alt={project.name}
+          className="project-hero-image"
+        />
       </div>
     </div>
   );

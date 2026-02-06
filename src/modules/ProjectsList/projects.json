@@ -2,27 +2,45 @@
   "projects": [
     {
       "id": 1,
-      "name": "Project Alpha",
-      "description": "A web application for managing tasks and deadlines.",
-      "image": "https://via.placeholder.com/300x200?text=Project+Alpha",
-      "technologies": ["React", "Node.js", "MongoDB"],
-      "href": "/projects/alpha",
-      "date": "2025-12-01"
+      "name": "PORT Designs",
+      "description": "Refonte complète d'un site ecommerce et migration",
+      "image": "portdesigns.png",
+      "technologies": ["PHP", "Smarty", "Prestashop", "SQL"],
+      "href": "/projects/port-designs",
+      "date": "2025-05-01"
     },
     {
       "id": 2,
-      "name": "Project Beta",
+      "name": "Project Van Gogh",
       "description": "A mobile app for tracking fitness activities and health metrics.",
-      "image": "https://via.placeholder.com/300x200?text=Project+Beta",
+      "image": "projectvangogh.png",
       "technologies": ["React Native", "Firebase"],
       "href": "/projects/beta",
       "date": "2025-11-15"
     },
     {
       "id": 3,
-      "name": "E-Commerce Platform",
+      "name": "E-Commerce Django",
       "description": "Full-stack e-commerce solution with payment integration.",
-      "image": "https://via.placeholder.com/300x200?text=E-Commerce",
+      "image": "ecommercedjango.png",
+      "technologies": ["React", "Express", "PostgreSQL", "Stripe"],
+      "href": "/projects/ecommerce",
+      "date": "2025-10-20"
+    },
+    {
+      "id": 4,
+      "name": "CRUD BDD Json en PHP",
+      "description": "Full-stack e-commerce solution with payment integration.",
+      "image": "crudbddjson.png",
+      "technologies": ["React", "Express", "PostgreSQL", "Stripe"],
+      "href": "/projects/ecommerce",
+      "date": "2025-10-20"
+    },
+    {
+      "id": 5,
+      "name": "Cartes Pokémon Réalistes",
+      "description": "Full-stack e-commerce solution with payment integration.",
+      "image": "cartespokemonrealistes.png",
       "technologies": ["React", "Express", "PostgreSQL", "Stripe"],
       "href": "/projects/ecommerce",
       "date": "2025-10-20"
