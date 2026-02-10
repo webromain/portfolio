@@ -1,0 +1,118 @@
+.contact-section {
+  padding: 3rem 2rem;
+}
+
+.portfolio-contact-form {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: var(--transparent-backdrop-filter);
+  border: 1px solid var(--neutral);
+  border-radius: var(--soft-border);
+  box-shadow: var(--shadow-s);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: var(--font);
+}
+
+.portfolio-contact-form label {
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 8px;
+  display: block;
+  font-size: 1rem;
+}
+
+.portfolio-contact-form input,
+.portfolio-contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--neutral);
+  border-radius: var(--soft-border);
+  font-family: var(--font);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--white);
+}
+
+.portfolio-contact-form input::placeholder,
+.portfolio-contact-form textarea::placeholder {
+  color: var(--grey);
+}
+
+.portfolio-contact-form input:focus,
+.portfolio-contact-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(2, 133, 190, 0.15);
+}
+
+.portfolio-contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+  font-family: var(--font);
+}
+
+.portfolio-contact-form button {
+  padding: 12px 24px;
+  background-color: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--primary);
+  border-radius: var(--soft-border);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-end;
+  font-family: var(--font);
+}
+
+.portfolio-contact-form button:hover {
+  background-color: var(--secondary);
+  border-color: var(--secondary-darker);
+}
+
+.portfolio-contact-form button:active {
+  background-color: var(--secondary-darker);
+  border-color: var(--secondary);
+}
+
+.portfolio-contact-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact-success {
+  color: #dcfce7;
+  font-size: 0.9rem;
+  padding: 12px;
+  background-color: rgba(34, 197, 94, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.6);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.contact-error {
+  color: #f87171;
+  font-size: 0.9rem;
+  padding: 8px 0;
+}
+
+span.required {
+  color: var(--secondary);
+  margin-left: 4px;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .portfolio-contact-form {
+    padding: 20px;
+  }
+}

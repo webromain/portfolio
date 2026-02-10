@@ -3,7 +3,7 @@ import "./PortfolioFooter.css";
 function PortfolioFooter() {
   return (
     <footer className="portfolio-footer">
-      <p>© 2024 Romain POISSON. All rights reserved.</p>
+      <p>© 2026 Romain POISSON. All rights reserved.</p>
     </footer>
   );
 }

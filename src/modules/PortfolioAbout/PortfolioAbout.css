@@ -1,0 +1,182 @@
+.about-section {
+  padding: 3rem 2rem;
+}
+
+.about-content,
+.about-card {
+  width: 100%;
+}
+
+/* En-tête */
+/* .about-header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: fadeInDown 0.8s ease;
+} */
+
+.about-header h1 {
+  font-size: 3.2em;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-subtitle {
+  font-size: 1.2em;
+  color: var(--grey);
+  font-weight: 500;
+}
+
+/* Contenu */
+.about-content {
+  margin: auto;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.about-card {
+  background: var(--transparent-back);
+  backdrop-filter: var(--transparent-backdrop-filter);
+  border: 1px solid var(--neutral);
+  border-radius: var(--soft-border);
+  padding: 40px;
+  box-shadow: var(--shadow-s);
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  border-color: var(--primary);
+  background: rgba(2, 133, 190, 0.05);
+  transform: translateY(-5px);
+}
+
+.about-card h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 10px;
+}
+
+.about-card h3 {
+  font-size: 1.3em;
+  color: var(--white);
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.about-text {
+  line-height: 1.8;
+  color: var(--white);
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.about-text strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.about-text em {
+  color: var(--grey);
+  font-style: italic;
+}
+
+.job-details {
+  color: var(--grey);
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.job-details strong {
+  color: var(--primary);
+}
+
+/* Listes */
+.skills-list,
+.goals-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.skills-list li,
+.goals-list li {
+  padding: 10px 0;
+  padding-left: 30px;
+  position: relative;
+  color: var(--white);
+}
+
+.skills-list li::before,
+.goals-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-header h1 {
+    font-size: 2.2em;
+  }
+
+  .about-subtitle {
+    font-size: 1em;
+  }
+
+  .about-card {
+    padding: 25px;
+  }
+
+  .about-card h2 {
+    font-size: 1.4em;
+  }
+
+  .about-card h3 {
+    font-size: 1.1em;
+  }
+
+  .about-text p {
+    font-size: 0.95em;
+  }
+}

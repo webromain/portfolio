@@ -239,7 +239,7 @@ function PortfolioHeader() {
             </svg>
             Instagram
           </a>
-          <a href="/cv" className="cv" target="_blank">
+          <a href="/cv" className="cv">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

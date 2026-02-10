@@ -121,7 +121,7 @@ function PortfolioNavigation() {
           <h1>romain@poisson:~$ portfolio</h1>
         </div>
         <div className="options">
-          <a href="#projects">
+          <a href="#contact">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

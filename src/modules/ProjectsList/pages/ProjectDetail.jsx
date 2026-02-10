@@ -3,6 +3,15 @@ import { useEffect, useState } from "react";
 import projectsData from "../projects.json";
 import "./ProjectDetail.css";
 
+// Importer toutes les images du dossier projects
+const images = import.meta.glob(
+  "../../../assets/img/projects/*.{png,jpg,jpeg,gif,webp}",
+  {
+    eager: true,
+    import: "default",
+  },
+);
+
 // Fonction pour créer un slug à partir du titre
 const createSlug = (title) => {
   return title
@@ -23,7 +32,15 @@ function ProjectDetail() {
       (p) => createSlug(p.name) === projectSlug,
     );
     if (foundProject) {
-      setProject(foundProject);
+      // Extraire le nom du fichier depuis le chemin et importer l'image
+      const imageName = foundProject.image.split("/").pop();
+      const imagePath = `../../../assets/img/projects/${imageName}`;
+      const importedImage = images[imagePath];
+
+      setProject({
+        ...foundProject,
+        image: importedImage || foundProject.image,
+      });
     } else {
       navigate("/");
     }

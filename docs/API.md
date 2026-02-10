@@ -33,7 +33,7 @@ const [projects, setProjects] = useState([]);
 
 ```jsx
 <div className="projects-list-container">
-  <h2 className="projects-list-title">My Projects</h2>
+  <h2 className="section-title">My Projects</h2>
   <div className="projects-grid">
     {projects.map((project) => (
       <ProjectCard key={project.id} project={project} />
@@ -267,7 +267,7 @@ URL : `http://localhost:5174/projects/1`
 ```javascript
 useEffect(() => {
   const foundProject = projectsData.projects.find(
-    (p) => p.id === parseInt(projectId)
+    (p) => p.id === parseInt(projectId),
   );
   if (foundProject) {
     setProject(foundProject);

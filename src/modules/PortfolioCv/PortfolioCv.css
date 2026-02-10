@@ -1,0 +1,17 @@
+.cv-section {
+  padding: 3rem 2rem;
+}
+
+.cv-section iframe {
+  margin: auto;
+  width: 70vw;
+  height: 100vw;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .cv-section {
+    padding: 2rem 1rem;
+  }
+}

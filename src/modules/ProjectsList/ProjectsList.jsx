@@ -44,14 +44,14 @@ function ProjectsList() {
   };
 
   return (
-    <div id="projects" className="projects-list-container">
-      <h2 className="projects-list-title">:~$ My Projects</h2>
+    <section id="projects" className="projects-list-container">
+      <h2 className="section-title">:~$ My Projects</h2>
       <div className="projects-grid">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
